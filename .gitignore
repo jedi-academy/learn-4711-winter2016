@@ -4,3 +4,10 @@
 */cache/*
 */cache/!index.html
 */cache/!.htaccess
+/nbproject/private/
+/nbproject/
+/index.php
+/.htaccess
+/application/
+/assets/
+/public/
