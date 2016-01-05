@@ -2,7 +2,7 @@
 <!--
 Lesson 01a - Introduction
 -->
-<lesson status="beta">
+<lesson status="final">
     <!-- Activity metadata ... override anything from the course or organizer -->
 
     <slide title="Introduction" layout="normal">
@@ -158,12 +158,20 @@ Lesson 01a - Introduction
     <slide title="CodeIgniter Examples" layout="normal">
         <div class="left">
             <p>The <a href="http://www.codeigniter.com/">CodeIgniter website</a> itself is (not surprisingly) implemented using CodeIgniter,
-            and it is <a href="https://github.com/bcit-ci/codeigniter-website">open-sourced</a>:)</p>
-            <img class="scale" width="600" height="458" src="/data/lessons/pix/1-8.png"/>
+                and it is <a href="https://github.com/bcit-ci/codeigniter-website">open-sourced</a>:)</p>
+            <p>Many major corporations have used COdeIgniter, whether internally or public-facing: 
+                Uber, Apple, Telus</p>
+            <p>Some other sites built with CodeIgniter, in no specific order:
+                https://www.daniweb.com/,
+                http://www.fsw.edu/, 
+                http://creditflux.com/,
+                http://www.la-commanderie.be/,
+                www.galianoisland.com
+            </p>
+            
         </div>
         <div class="right">
-            <p>Another site implemented using CodeIgniter is the <a href="http://www.galianoisland.com/">Galiano Island tourism site</a>.</p>
-            <img class="scale" width="600" height="464" src="/data/lessons/pix/1-7.png"/>
+            <img class="scale" width="600" height="458" src="/data/lessons/pix/1-8.png"/>
         </div>
     </slide>
 
