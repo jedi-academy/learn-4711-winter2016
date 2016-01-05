@@ -2,7 +2,7 @@
 <!--
 Lesson 00 - In-class Only Introduction
 -->
-<lesson status="beta">
+<lesson status="final">
     <!-- Activity metadata ... override anything from the course or organizer -->
     
     <!-- The meat of the presentation -->
@@ -46,11 +46,11 @@ Lesson 00 - In-class Only Introduction
     <slide title="Course Context" layout="normal">
         <ul>
             <li>
-                <a href="http://www.bcit.ca/study/outlines/20153035498" target="_blank">Course outline</a> on BCIT site</li>
+                <a href="http://www.bcit.ca/study/outlines/20161047992" target="_blank">Course outline</a> on BCIT site</li>
             <li>Organizer, lectures, tutorials, examples, labs &amp; assignments all on this site</li>
             <li>Labs done individually, on github; readme (with link) to D2L dropbox</li>
             <li>Assignments done in teams, on github; readme (with links) to D2L dropbox</li>
-            <li>Labs start: this week</li>
+            <li>Labs start: this week (Weds)</li>
         </ul>
     </slide>
 
@@ -60,8 +60,7 @@ Lesson 00 - In-class Only Introduction
             <li>30%: 9 labs, individual</li>
             <li>20%: Midterm exam, weeks 1-7</li>
             <li>25%: Final exam, comprehensive</li>
-            <li>Dayschool: attendance expected, missing more than 2 labs => U</li>
-            <li>Distance: weekly checkin expected, missing more than 2 => uninvited</li>
+            <li>Attendance expected, missing more than 2 labs => U</li>
             <li>Labs and assignments may have a complexity adjustment ... up to 20%</li>
         </ul>
         <p>
