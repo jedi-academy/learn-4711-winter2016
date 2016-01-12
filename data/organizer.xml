@@ -8,22 +8,19 @@ Course organizer for Comp4711
         <lesson type="lesson" name="intro00" pdf="4711-intro00-in-class.pdf">Course Introduction</lesson>
         <lesson type="lesson" name="intro01" pdf="4711-intro01-introduction.pdf">Introduction</lesson>
         <lesson type="lesson" name="intro02" pdf="4711-intro02-golden-rules.pdf">Golden Rules</lesson>
-<!--        <tutorial type="tutorial" name="setup01" pdf="setup01-xampp-installation.pdf">XAMPP Installation</tutorial>
-        <tutorial type="tutorial" name="setup02" pdf="setup02-virtual-hosting-setup.pdf">Virtual Hosting Setup</tutorial>
-        <tutorial type="tutorial" name="setup03" pdf="setup03-php-crash-course.pdf">PHP Crash Course</tutorial>
-        <lab type="lab" name="lab01" duedate="2015.09.13 17:30" pdf="lab01-development-setup.pdf">Development Setup</lab>
--->    </week>
+    </week>
     <week num="2">
         <topic>CodeIgniter MVC Framework</topic>
+        <lesson type="lesson" name="basic01" domain="codeigniter.jlparry.com" pdf="basic01-mvc-framework-introduction.pdf">MVC Framework Introduction</lesson>
+        <lesson type="lesson" name="basic01-other" domain="codeigniter.jlparry.com" pdf="basic01-other-framework-examples.pdf">Other MVC Framework Examples</lesson>
+        <github type="github" name="contacts" link="https://github.com/jedi-academy/example-contacts">Example webapp - contacts</github>
+        <lesson type="lesson" name="dev03" domain="devops.jlparry.com" pdf="dev03-devops-example.pdf">Workflow Example</lesson>
+        <tutorial type="tutorial" name="setup04" domain="devops.jlparry.com" pdf="setup04-setup-codeigniter.pdf">Setup CodeIgniter</tutorial>
          <!--
-       <lesson type="lesson" name="basic01" pdf="basic01-mvc-framework-introduction.pdf">MVC Framework Introduction</lesson>
-        <github type="github" name="contacts" link="https://github.com/comp4711/example-contacts">Example webapp - contacts</github>
-        <lesson type="lesson" name="dev01" pdf="dev01-devops-workflow.pdf">Devops Workflow</lesson>
-        <tutorial type="tutorial" name="setup04" pdf="setup04-setup-codeigniter.pdf">Setup CodeIgniter</tutorial>
         <tutorial type="tutorial" name="basic01" pdf="basic01-convert-static-site-to-trivial-codeigniter.pdf">Convert Static Site to Trivial CodeIgniter</tutorial>
         <tutorial type="tutorial" name="basic02" pdf="basic02-convert-trivial-site-to-basic-codeigniter.pdf">Convert Trivial Site to Basic CodeIgniter</tutorial>
         <tutorial type="tutorial" name="basic03" pdf="basic03-convert-basic-site-to-good-codeigniter.pdf">Convert Basic Site to Good CodeIgniter</tutorial>
-        <lab type="lab" name="lab02" duedate="2015.09.20 17:30" pdf="lab02-codeigniter-intro.pdf">CodeIgniter Intro</lab>
+        <lab type="lab" name="lab02" duedate="2015.09.20 17:30" pdf="4711-lab02-codeigniter-intro.pdf">CodeIgniter Intro</lab>
  -->     
     </week>
     <week num="3">
