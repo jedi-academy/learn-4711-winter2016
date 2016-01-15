@@ -21,7 +21,7 @@ Course organizer for Comp4711
         <tutorial type="tutorial" name="basic02" pdf="basic02-convert-trivial-site-to-basic-codeigniter.pdf">Convert Trivial Site to Basic CodeIgniter</tutorial>
         <tutorial type="tutorial" name="basic03" pdf="basic03-convert-basic-site-to-good-codeigniter.pdf">Convert Basic Site to Good CodeIgniter</tutorial>
  -->     
-        <lab type="lab" name="lab02" pdf="4711-lab02-codeigniter-intro.pdf">CodeIgniter Intro</lab>
+        <lab type="lab" name="lab02" pdf="4711-lab02-process-prep-REVISED.pdf">Process Prep (REVISED)</lab>
     </week>
     <week num="3">
         <topic>Controllers &amp; Routing</topic>
