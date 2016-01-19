@@ -45,6 +45,23 @@ Lesson 02 - Controllers
         </div>
     </slide>
 
+    <slide title="Key Controller Abstractions" layout="normal">
+        <div class="left">
+            <p>The key abstractions for CI controllers:</p>
+            <ul>
+                <li>CI's <a href="http://www.codeigniter.com/user_guide/libraries/input.html" target="_blank">Input</a> class encapsulates an HTTP request</li>
+                <li>CI's <a href="http://www.codeigniter.com/user_guide/libraries/output.html" target="_blank">Output</a> class encapsulates an HTTP response</li>
+                <li>CI's <a href="http://www.codeigniter.com/user_guide/database/examples.html" target="_blank">Database</a> and <a href="http://www.codeigniter.com/user_guide/libraries/sessions.html" target="_blank">Session</a> drivers encapsulate container storage</li>
+                <li>CI provides libraries &amp; helpers to encapsulate or wrap common web components</li>
+                <li>Of course, you add your own or third party models, libraries and packages</li>
+            </ul>       
+        </div>
+        <div class="right">
+            <br/>
+            <img class="scale" width="720" height="288" src="/data/lessons/pix/3/3-arch.png"/>
+        </div>
+    </slide>
+
     <slide title="Types of Controllers" layout="normal">
         <div class="left">
             <p>There are three common types of controllers:</p>
