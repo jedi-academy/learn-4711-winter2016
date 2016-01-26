@@ -21,13 +21,16 @@ Course organizer for Comp4711
         <lab type="lab" name="lab02" pdf="4711-lab02-process-prep-REVISED.pdf">Process Prep (REVISED)</lab>
     </week>
     <week num="3">
-        <topic>Controllers &amp; Routing</topic>         
+        <topic>Controllers</topic>         
         <lesson type="lesson" name="basic02" pdf="4711-basic02-controllers.pdf">Controllers</lesson>
-        <lesson type="lesson" name="basic06" pdf="4711-basic06-routing.pdf">Routing</lesson>
         <lab type="lab" name="lab03" pdf="4711-lab03-website-conversion.pdf">Website Conversion</lab>
         <tutorial type="tutorial" name="ci-basic01" pdf="4711-ci-basic01-trivial-ci-site.pdf">Static to Trivial CI</tutorial>
         <tutorial type="tutorial" name="ci-basic02" pdf="4711-ci-basic02-basic-ci-webapp.pdf">Trivial CI to Basic CI</tutorial>
         <tutorial type="tutorial" name="ci-basic03" pdf="4711-ci-basic03-good-ci-webapp.pdf">Basic CI to Good CI</tutorial>
+    </week>
+    <week num="4">
+        <topic>Routing</topic>         
+        <lesson type="lesson" name="basic06" pdf="4711-basic06-routing.pdf">Routing</lesson>
     </week>
     <week num="4">
         <topic>Models &amp; ORM</topic>
@@ -60,6 +63,9 @@ Course organizer for Comp4711
                <lab type="lab" name="lab05" duedate="2015.10.25 17:30" pdf="lab05-views.pdf">Views</lab>
         -->        
     </week>
+    <week num="8">
+        <topic>Midterm exam</topic>
+    </week>
     <week num="7">
         <topic>XML Introduction &amp; Structure</topic>
         <!--
@@ -70,9 +76,6 @@ Course organizer for Comp4711
               <lab type="lab" name="lab06" duedate="2015.11.08 17:30">XML Basics</lab>
               <assignment type="assignment" name="assignment2" duedate="2015.11.15 23:59" pdf="assignment2-functional-webapp.pdf">Functional Webapp, introduced</assignment>
         -->   
-    </week>
-    <week num="8">
-        <topic>Midterm exam</topic>
     </week>
     <week num="9">
         <topic>XML Constraints &amp; Processing</topic>
@@ -106,17 +109,14 @@ Course organizer for Comp4711
             <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
         -->
     </week>
-    <week num="13">
-        <topic>Social Networking</topic>
+    <week num="14">
+        <topic>Loose Ends &amp; Review</topic>
         <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
             <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
             <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
             <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
         -->
-    </week>
-    <week num="14">
-        <topic>Loose Ends &amp; Review</topic>
-    </week>
+   </week>
     <week num="15">
         <topic>Final Exam Week</topic>
     </week>
