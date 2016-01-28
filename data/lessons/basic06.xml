@@ -78,8 +78,8 @@ Lesson 06 - Routing
         <p>For instance:<br/>
             <code>$route['products/([a-z]+)/(\d+)'] = "$1/id_$2";</code>
             <br/>
-            would remap <code>/products/banana/eat</code> 
-            to <code>/eat/id_banana</code>
+            would remap <code>/products/banana/25</code> 
+            to <code>/banana/id_25</code>
         </p>
         <p>Another example:<br/>
             <code>$route['([a-z]+)/register'] = 'assimilate/$0';</code>
@@ -102,8 +102,7 @@ Lesson 06 - Routing
             </code>
         </p>
         <p>
-            This is code to execute, NOT a controller. It could suit a utility controller,
-            but not the typical CI paradigm. In the above example, the two matched tokens
+            This is code to execute, NOT a controller. In the above example, the two matched tokens
             would be passed as the parameters  <code>$product_type</code> and 
             <code>$id</code>.
         </p>
@@ -120,29 +119,40 @@ Lesson 06 - Routing
         </p>
     </slide>
 
-    <slide title="Routing Assumptions" layout="normal">
-        <p>With all except the callback routing rules, the expectation
-            is that the value resulting from a rule match
-            will specify a controller and method to execute,
-            with paramters for that method, the same as segment-based routing.</p>
-        <p>Think of the rules as rich ways to map requests to the
-            appropriate handling controller and method.
-        </p>
-    </slide>
-
     <slide title="Remapping On the Fly" layout="normal">
          <div class="left">
        <p>Separate from any routing rules, a controller itself can
         affect the handling of an incoming request, through
         a <code>_remap</code> method.</p>
-        <p>An example of this is shown here. It demonstrates *one*
-            way to handle localization, with URLs of the form <code>/idiom/class/method/parm1/...</code>.           
-        </p>
-            <p>You need a routing rule to swap the idiom and the intended controller and methods <br/>
-            <code>$routes['(:any)/(:any)/(.+)'] = '$1/$0/$2';</code></p>
+        <p>The _remap method lets you overwrite the normal 
+            behaviour for controller methods. If your controller has
+        this method, it is always called.</p>
          </div>
         <div class="right">
-            <p>Then, in your base controller...<pre><code>
+        <p>An example which hides the real name of a method ...<pre><code>
+public function _remap($method, $parms=array() ) {
+    if ($method == 'work') $this->guessMeIfYouCan($parms);
+    else return call_user_func_array($method,$parms);
+}
+            </code></pre></p>
+        </div>
+    </slide>
+
+    <slide title="Remapping for Localization" layout="normal">
+         <div class="left">
+        <p>Remapping could also be used to handle of having a language code 
+            between the domain name and
+            the "normal" part of a URL, for instance
+            "https://msdn.microsoft.com/en-us/library/windows/desktop".</p>
+         <p>This way, URLs have the form <code>/idiom/class/method/parm1/...</code>,
+         where "idiom" is a language identifier.
+        </p>
+            <p>You need a routing rule to swap the idiom and the intended controller: <br/>
+            <code>$routes['(:any)/(:any)/(.+)'] = '$1/$0/$2';</code></p>
+            <p>This would redirect the example above to "/library/en-us/windows/desktop".</p>
+         </div>
+        <div class="right">
+            <p>Then, in your <code>Library</code> or base controller...<pre><code>
 public function _remap($method, $parms=array() ) {
     $idiom = $method; // the alleged method is really an idiom
     $this->lang->load('translations_for_this_controller',$idiom);
@@ -213,7 +223,7 @@ public function _remap($method, $parms=array() ) {
     </slide>
 
     <slide title="Loose Ends" layout="normal" tag="tag8">
-        <p>Upcoming lessons and tutorials will address some more exotic controller issues:
+        <p>Upcoming lessons and tutorials may address some more exotic controller issues:
             <ul>
                 <li>Webapp error handling (avoid getting fired)</li>
                 <li>Handling AJAX requests</li>

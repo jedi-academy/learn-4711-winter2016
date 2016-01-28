@@ -18,16 +18,11 @@ Normal 01 - Working With Controllers & Routing
     <slide title="Preparation" layout="normal">
         <div class="left">
             <p>I have prepared a 
-                <a href="https://github.com/comp4711/starter-lab03">
+                <a href="https://github.com/jedi-academy/starter-quotes">
                     starter webapp</a> – a mini 
                 "content management system". 
                 It is incomplete and the pieces are not properly connected, 
                 and you need to fix these, as described following.</p>
-            <p>Fork the github project, and clone it locally to
-                work with, the same as you have done with the previous tutorial.</p>
-            <p>
-                <strong>DO NOT start working with the repository until directed to do so in the tutorial.</strong>
-            </p>
         </div>
         <div class="right">
             <br/>
@@ -37,21 +32,34 @@ Normal 01 - Working With Controllers & Routing
 
     <slide title="The Starter Webapp" layout="normal">
         <p>The "Quotes" starter webapp
-            uses bootstrap and jquery, 
+            uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and 
+            <a href="https://jquery.com/" target="_blank">jQuery</a>, 
             simply because they make it so easy to have a 
-            not-ugly-though-the-same-as-everyones looking site.</p>
+            not-ugly-though-the-same-as-everyone-else's looking site.</p>
         <p>The  Quotes webapp looks beautiful, I have to admit, but none 
             of the links work, apart from the logo taking you back 
             to the homepage :(</p>
         <p>Your job is to fix these broken links, per the directions that follow :)</p>
     </slide>
 
+    <slide title="What Comes With the Starter?" layout="normal">
+        <p>The starter app uses a base controller, <code>application/core/MY_Controller</code>,
+            which uses <code>application/views/_template</code> to provide
+            the shell and layout of rendered webpages. 
+            The app uses a "view templating" strategy, where a controller is
+            expected to set the name of its view fragment, and any other
+            data, as <code>$this-&gt;data</code> parameters,
+            and to then call the inherited <code>render()</code> method.</p>
+        <p>Data for the starter app is provided in the <code>application/models/Quotes</code>
+            model, which has a mock database of quotations. No RDB is needed to run this app.</p>
+    </slide>
+
     <slide title="Where Do I Start?" layout="normal">
-        <p>There is a view template in <code>application/views/justone.php</code>. 
-            This is meant to display just a single quote. 
-            Each of the broken links needs to resolve to the appropriate 
+        <p>There is a view fragment template in <code>application/views/justone.php</code>. 
+            This is meant to display just a single quote. </p>
+            <p>Each of the broken links needs to resolve to the appropriate 
             controller, or method in a controller, which extracts the 
-            relevant quote from the model, 
+            relevant quote data from the model, 
             and builds the view parameters for <code>justone</code> to present it.</p>
         <p>Solve the logic for the first broken link that you fix, 
             and you can re-use the technique for all the others.</p>
@@ -70,64 +78,59 @@ Normal 01 - Working With Controllers & Routing
             <tr>
                 <th>Link</th>
                 <th>Location</th>
-                <th>How to Fix It</th>
+                <th>Routing Strategy</th>
             </tr>
             <tr>
                 <td>first</td>
                 <td>Navbar</td>
-                <td>A suitable <b>new controller</b> in controllers/</td>
+                <td>Normal routing</td>
             </tr>
             <tr>
                 <td>last</td>
                 <td>Navbar</td>
-                <td>A suitable <b>new controller</b> in controllers/last/</td>
+                <td>Normal routing</td>
             </tr>
             <tr>
                 <td>sleep</td>
                 <td>Homepage</td>
-                <td>Remapped to first::zzz, i.e. the "zzz" method inside the "First" controller</td>
+                <td>Wildcard routing</td>
             </tr>
             <tr>
                 <td>lock/em/up</td>
                 <td>Homepage</td>
-                <td>Remapped to welcome::shucks, using wildcard (lock / *), i.e. the "shucks"
-                    method inside the "Welcome" controller</td>
+                <td>Wildcard routing</td>
             </tr>
             <tr>
                 <td>show/3</td>
                 <td>Homepage</td>
-                <td>Remapped to first::gimme/3, using wildcard (show / digit),
-                    i.e. the "gimme" method inside the "First" controller,
-                    with that method defined to take a parameter</td>
+                <td>Wildcard routing</td>
             </tr>
             <tr>
                 <td>dunno</td>
                 <td>Homepage</td>
-                <td>Remapped to guess (<b>new controller</b>)</td>
+                <td>Callback routing</td>
             </tr>
             <tr>
                 <td>wise/bingo</td>
                 <td>Homepage</td>
-                <td>Remapped to bingo, using regular expression 
-                    (4 letters / bingo) (<b>new controller</b>)</td>
+                <td>Regular expression routing</td>
             </tr>
             <tr>
                 <td>comp4711/wisdom</td>
                 <td>Homepage</td>
-                <td>Remapped to bingo::wisdom, using regular expression (comp + digits / *)</td>
+                <td>Regular expression routing</td>
             </tr>
         </table>
     </slide>
 
     <slide title="Suggested Process" layout="normal">
-        <p>Fix the problems in sequence, working your way down the table.</p>
+        <p>Fix the problems in sequence, working your way down the list.</p>
         <p>For each of these, I suggest you determine the controller 
             responsible for handling the request, the method inside 
             that controller, and then the necessary routing.</p>   
-        <p>Note that the table row for "last" suggests a controller 
-            in <code>controllers/last/</code> ... 
-            this explicitly means that "last" is a subfolder 
-            inside <code>application/controllers</code>. Hmmm.</p>         
+        <p>How will you know if your "fix" worked?
+            Clicking on an author on the homepage will lead to the featured quote
+            from him/her.</p>
     </slide>
 
     <slide title="Helpful Hint" layout="normal">
@@ -149,36 +152,293 @@ Normal 01 - Working With Controllers & Routing
         </p>
     </slide>
 
-    <slide title="Let's Get Started" layout="normal">
-        <p>Inside your IDE, create a new branch, "develop",
-            based on "master". </p>
-        <p>This protects you if there are any
-            updates to the starter repository, which you would then merge
-            into your "master" branch. If this happens,
-            you might have to resolve any resulting conflicts in your "develop" and
-            derivative branches, but it will be loads easier if
-            you have separated the master and develop branches this way.</p>
+    <slide title="#1 First" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>first</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Menu navbar, first link after the logo</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Bob Monkhouse's quote (he is the first of the six)</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Normal routing</td>
+            </tr>
+           <tr>
+                <th>Required</th>
+                <td>No routing rule</td>
+            </tr>
+            <tr>
+                <th>How to Fix It</th>
+                <td>A suitable <b>new controller</b> in controllers/</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/First::index()</td>
+            </tr>
+        </table>
+    </slide>
+  
+    <slide title="#2 Last" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>last</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Menu navbar, last link after the logo</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Isaac Asimov's quote (he is the last of the six)</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Normal routing</td>
+            </tr>
+           <tr>
+                <th>Required</th>
+                <td>No routing rule; should lead to a subfolder</td>
+            </tr>
+           <tr>
+                <th>How to Fix It</th>
+                <td>A suitable <b>new controller</b> in controllers/last</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/last/Welcome::index()</td>
+            </tr>
+        </table>
+    </slide>
+  
+    <slide title="#3 Sleep" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>sleep</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Top left author image</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Bob Monkhouse's quote</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Wildcard routing</td>
+            </tr>
+           <tr>
+                <th>Required</th>
+                <td>routing rule, leading to first/zzz</td>
+            </tr>
+           <tr>
+                <th>How to Fix It</th>
+                <td>Remapped to the "zzz" method inside the "First" controller</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/First::zzz()</td>
+            </tr>
+        </table>
+    </slide>
+  
+     <slide title="#4 Lockemup" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>lock/em/up</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Top middle author image</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Elaine Boosler's quote</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Wildcard routing</td>
+            </tr>
+           <tr>
+                <th>Required</th>
+                <td>Routing rule leasing to welcome/shucks</td>
+            </tr>
+           <tr>
+                <th>How to Fix It</th>
+                <td>Remapped, using wildcards (lock / * / *), 
+                    i.e. the "shucks"
+                    method inside the "Welcome" controller</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/Welcome::shucks()</td>
+            </tr>
+        </table>
     </slide>
 
-    <slide title="Fix the Broken Links Now" layout="normal">
-        <p>Fix each of the broken links, one at a time.</p>
-        <p>You can choose to create a feature branch for each of these,
-            merging them into your "develop" branch once working, or you could
-            group the changes needed to fix a link into a single commit,
-            to your "develop" branch.</p>
-        <p>The first way, you will end up with eight branches: master, develop,
-            and then one for each fixed link. The second way, you will end up with two branches,
-            master and develop.</p>
-        <p>After fixing each broken link, commit your changes and push them to your 
-            "origin". If you are using feature branches for each fix, merge
-            your working branch into "develop", so that subsequent fix/feature
-            branches can be based on the most recent "develop" branch.</p>
+    <slide title="#5 Show" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>show/3</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Top right author image</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Mark Russell's quote</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Wildcard routing</td>
+            </tr>
+           <tr>
+                <th>Required</th>
+                <td>Routing rule, leading to first/gimme/3),
+                    i.e. the "gimme" method inside the "First" controller,
+                    with that method defined to take a parameter</td>
+            </tr>
+           <tr>
+                <th>How to Fix It</th>
+                <td>Remapped using wildcard (show / digit</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/First::gimme(id)</td>
+            </tr>
+        </table>
     </slide>
 
+    <slide title="#6 Dunno" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>dunno</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Lower left author image</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Anonymous quote?</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Callback routing</td>
+            </tr>
+           <tr>
+                <th>Required</th>
+                <td>Routing rule which returns a suitable image instead
+                of a web page.</td>
+            </tr>
+           <tr>
+                <th>How to Fix It</th>
+                <td>Surprise! have a callback function that
+                sets a suitable mime-type header and then returns
+                a random SFW image that you have added to the
+                data folder</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>Strictly inside the routing configuration, something
+                    like ...<pre>
+                        <code>
+if (!file_exists($source)) { show_404($source); }
+$this->load->helper('file');
+$mimeType = get_mime_by_extension($source);
+header("Content-type: " . $mimeType);
+header('Content-Disposition: inline');
+readfile($source);  
+die();                         
+                        </code>
+                    </pre>
+                </td>
+            </tr>
+        </table>
+    </slide>
+
+     <slide title="#7 Bingo" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>wise/bingo</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Lower middle author image</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Socrates' quote</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Regular expression routing</td>
+            </tr>
+          <tr>
+                <th>Required</th>
+                <td>Routing rule, leading to /bingo (<b>new controller</b>)</td>
+            </tr>
+            <tr>
+                <th>How to Fix It</th>
+                <td>Remapped using regular expression 
+                    (4 letters / bingo)</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/Bingo::index()</td>
+            </tr>
+        </table>
+    </slide>
+
+     <slide title="#8 Wisdom" layout="normal">
+        <table style="font-size:80%; padding: 10px; text-align:left">
+            <tr>
+                <th>Link</th>
+                <td>comp4711/wisdom</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Lower right author image</td>
+            </tr>
+            <tr>
+                <th>Expected result</th>
+                <td>Isaac Asimov's quote</td>
+            </tr>
+            <tr>
+                <th>Routing Strategy</th>
+                <td>Regular expression routing</td>
+            </tr>
+          <tr>
+                <th>Required</th>
+                <td>Routing rule, leading to wise/bingo</td>
+            </tr>
+            <tr>
+                <th>How to Fix It</th>
+                <td>Remapped using regular expression (comp + digits / *)</td>
+            </tr>
+            <tr>
+                <th>Hint</th>
+                <td>application/controllers/Wise::bingo()</td>
+            </tr>
+        </table>
+    </slide>
     <slide title="Are We Done Yet?" layout="normal">
-        <p>When you are done, nothing will look different on the homepage, but
+        <p>When you are done, nothing will <strong>look</strong> different on the homepage, but
             the links will work properly :)</p>
-        <p>Merge your "develop" branch" into your "master" now.</p>
     </slide>
 
 </tutorial>
