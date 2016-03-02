@@ -65,9 +65,9 @@ Course organizer for Comp4711
         <lesson type="lesson" name="xml01" pdf="4711-xml01-xml-basics.pdf">XML Basics (Refresher)</lesson>
         <lesson type="lesson" name="xml02" pdf="4711-xml02-constraining-xml.pdf">Constraining XML</lesson>
         <github type="github" name="xml" link="https://github.com/jedi-academy/example-xml">XML Examples</github>
-        <!--
-        <tutorial type="tutorial" name="xml-xml01" >XML - Basics &amp; Constraints</tutorial>
         <lab type="lab" name="lab07" >XML Basics</lab>
+        <tutorial type="tutorial" name="xml-xml01" >XML - Basics &amp; Constraints (optional)</tutorial>
+        <!--
         <assignment type="assignment" name="assignment2" pdfx="assignment2-functional-webapp.pdf">Functional Webapp</assignment>
         -->
     </week>
