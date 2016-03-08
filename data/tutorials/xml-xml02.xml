@@ -17,7 +17,8 @@ Tutorial 07 - Processing XML
     <slide>
         <h1>Revisions &amp; Notes</h1>    
         <ul>
-            <li></li>
+            <li>This tutorial is incomplete ... it only introduces the project
+            and its setup.</li>
         </ul>            
     </slide>
     
@@ -32,13 +33,13 @@ Tutorial 07 - Processing XML
 
     <slide title="Preparation" layout="normal">
         <p>I have prepared a 
-            <a href="https://github.com/comp4711/example-simplexml" target="_blank">
+            <a href="https://github.com/jedi-academy/starter-simplexml" target="_blank">
                 example project</a>. </p>
         <p>We are using the same menu as last week, and its data is inside
             the menu.xml file inside the data folder.</p>
         <p>Fork the github project, and clone it locally to
             work with, the same as you have done with the previous tutorials.</p>
-        <p>Don't forget to add the special order you made last week, 
+        <p>If you kept the special order you made last in the last tutorial, add it
             to the data folder!</p>
     </slide>
 
