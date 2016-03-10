@@ -74,9 +74,9 @@ Course organizer for Comp4711
         <topic>XML Processing</topic>
         <lesson type="lesson" name="xml03" pdf="4711-xml03-xml-processing.pdf">XML Processing</lesson>
         <github type="github" name="xml" link="https://github.com/jedi-academy/example-xml">XML Examples - updated!</github>
-        <github type="github" name="xml" link="https://github.com/jedi-academy/example-simplexml">Barker Bob grills with SimpleXML</github>
-               <lab type="lab" name="lab08" pdf="4711-lab08-simplexml.pdf">XML Processing</lab>
-        <tutorial type="tutorial" name="xml-xml02" >XML Processing (optional)</tutorial>
+        <github type="github" name="simplexml" link="https://github.com/jedi-academy/example-simplexml">Barker Bob grills with SimpleXML</github>
+               <lab type="lab" name="lab08"  pdf="4711-lab08-simplexml.pdf">XML Processing</lab>
+        <tutorial type="tutorial" name="xml-xml02"  pdf="4711-xml-xml02-simplexml.pdf">XML Processing (optional)</tutorial>
 <!--        <tutorial type="tutorial" name="xml-xml03" >Creating XML (Draft)</tutorial>
         <assignment type="assignment" name="assignment2" pdfx="4711-assignment2-functional-webapp.pdf">Functional Webapp</assignment>-->
     </week>
