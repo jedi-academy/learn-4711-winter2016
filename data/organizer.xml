@@ -75,21 +75,21 @@ Course organizer for Comp4711
         <lesson type="lesson" name="xml03" pdf="4711-xml03-xml-processing.pdf">XML Processing</lesson>
         <github type="github" name="xml" link="https://github.com/jedi-academy/example-xml">XML Examples - updated!</github>
         <github type="github" name="simplexml" link="https://github.com/jedi-academy/example-simplexml">Barker Bob grills with SimpleXML</github>
-               <lab type="lab" name="lab08"  pdf="4711-lab08-simplexml.pdf">XML Processing</lab>
+        <lab type="lab" name="lab08"  pdf="4711-lab08-simplexml.pdf">XML Processing</lab>
         <tutorial type="tutorial" name="xml-xml02"  pdf="4711-xml-xml02-simplexml.pdf">XML Processing</tutorial>
-<!--        <tutorial type="tutorial" name="xml-xml03" >Creating XML (Draft)</tutorial>
+        <!--        <tutorial type="tutorial" name="xml-xml03" >Creating XML (Draft)</tutorial>
         <assignment type="assignment" name="assignment2" pdfx="4711-assignment2-functional-webapp.pdf">Functional Webapp</assignment>-->
     </week>
     <week num="11">
-        <topic>XML-RPC</topic>
-        <!--              <lesson type="lesson" name="advanced01">XML-RPC</lesson>
-            <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
-            <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
-            <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
+        <topic>Authentication</topic>
+        <lesson type="lesson" name="advanced01" pdf="4711-ci-advanced01.pdf">Authentication</lesson>
+        <lab type="lab" name="lab09"  pdf="4711-lab09-authentication.pdf">Authentication</lab>
+        <tutorial type="tutorial" name="tut-adv01"  pdf="4711-tut-adv01.pdf">Authentication</tutorial>
+        <!--     <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
         -->
     </week>
     <week num="12">
-        <topic>REST &amp; JSON</topic>
+        <topic>XML-RPC</topic>
         <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
             <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
             <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
@@ -97,7 +97,7 @@ Course organizer for Comp4711
         -->
     </week>
     <week num="13">
-        <topic>Authentication</topic>
+        <topic>REST &amp; JSON</topic>
         <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
             <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
             <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
