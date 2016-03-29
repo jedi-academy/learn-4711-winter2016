@@ -90,18 +90,17 @@ Course organizer for Comp4711
     </week>
     <week num="12">
         <topic>XML-RPC</topic>
-        <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
-            <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
-            <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
-            <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
-        -->
+        <lesson type="lesson" name="advanced02" pdf="4711-ci-advanced02.pdf">XML-RPC</lesson>
+        <github type="github" name="xml" link="https://github.com/jedi-academy/example-xmlrpc">XML-RPC Examples</github>
+        <!--       <tutorial type="tutorial" name="tut-adv02"  pdf="4711-tut-adv02-xmlrpc.pdf">XML-RPC Tutorial</tutorial>
+              <lab type="lab" name="lab10" pdf="4711-lab10-xmlrpc.pdf" >Working with XML-RPC</lab>
+        <assignment type="assignment" name="assignment2" pdfx="4711-assignment2-functional-webapp.pdf">Functional Webapp</assignment>-->
     </week>
     <week num="13">
         <topic>REST &amp; JSON</topic>
-        <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
-            <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
-            <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
-            <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
+         <!--        <lesson type="lesson" name="advanced03">REST &amp; JSON</lesson>
+        <tutorial type="tutorial" name="tut-adv03"  pdf="4711-tut-adv03-rest.pdf">REST</tutorial>
+            <lab type="lab" name="lab11" pdf="4711-lab11-rest.pdf" >Working with REST</lab>
         -->
     </week>
     <week num="14">
