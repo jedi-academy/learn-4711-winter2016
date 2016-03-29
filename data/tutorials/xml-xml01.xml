@@ -9,8 +9,9 @@ Tutorial 06 - Working With XML and DTDs
     <slide title="Tutorial Goals" layout="normal">
         <p>This tutorial is meant to give you some practice constraining and
             building an XML document, as described in the XML basics lesson(s).</p>
-        <p>I have prepared a starter project for you to build on.
-            It is not a webapp, but provides a standard folder to put stuff in.
+        <p>This tutorial does not have a starter project for you to build on.
+            It is not a webapp, but the work would be completed inside a
+            <code>data</code> folder inside a project.
             Next week, we can make it into a webapp, when you have to process
             the XML data you build this week.</p>
     </slide>
@@ -19,8 +20,8 @@ Tutorial 06 - Working With XML and DTDs
         <h1>Revisions &amp; Notes</h1>    
         <ul>
             <li>Some of the errors depicted in the tutorial may have been inadvertently corrected,
-            sorry. I left them in the original to show typical things
-            that go wrong, and to show you how to work around those.</li>
+                sorry. I left them in the original to show typical things
+                that go wrong, and to show you how to work around those.</li>
         </ul>            
     </slide>
     
@@ -37,17 +38,9 @@ Tutorial 06 - Working With XML and DTDs
             XML documents to help prove the correctness of our DTD.</p>
     </slide>
 
-    <slide title="Preparation" layout="normal">
-        <p>I have prepared a 
-            <a href="https://github.com/comp4711/starter-lab06" target="_blank">
-                starter project</a>. The lab 6 starter will just
-            hold data for now, and functionality will be added next week. 
-        </p>
-        <p>For your reference, the menu we will be using is found in
-            <code>/assets/images/menu1.gif</code>.
-        </p>
-        <p>Fork the github project, and clone it locally to
-            work with, the same as you have done with the previous tutorials.</p>
+    <slide title="What's Cooking?" layout="normal">
+        <p>Here is Barker Bob's menu. Mmmmm.</p>
+        <img class="scale" width="700" height="439" src="/data/tutorials/pix/menu1.gif"/>       
     </slide>
 
     <slide title="The End Result" layout="normal">
@@ -230,7 +223,7 @@ Tutorial 06 - Working With XML and DTDs
             <p>How do you make one of Barker Bob's burgers?</p>
             <p>This makes sense at the moment.</p>
             <p>Oops - I see an extra parenthesis and greater than sign at the
-            end of the "burger" element directive. That will need to be removed!</p>                
+                end of the "burger" element directive. That will need to be removed!</p>                
         </div>
         <div class="right">
             <br/>
@@ -266,7 +259,7 @@ Tutorial 06 - Working With XML and DTDs
             <p>Let's make a couple of assumptions to make our DTD more enforceable.</p>
             <p>Too bad we have to repeat the cheese options, but this means that
                 we just need the one "cheeses" element, with two attributes.</p>
-                <p>Oops - I see that the cheeses "content" is "(#EMPTY)" ...
+            <p>Oops - I see that the cheeses "content" is "(#EMPTY)" ...
                 that will need to be changed to "EMPTY" at some point, before
                 we can validate.</p>
         </div>
@@ -333,7 +326,7 @@ Tutorial 06 - Working With XML and DTDs
 
     <slide title="4. TEST YOUR ORDER" layout="normal" tag="tag4">
         <div class="left">
-        <p>Let's build an order for a #8 burger.</p>
+            <p>Let's build an order for a #8 burger.</p>
             <p>Right-click on the data folder and choose new&gt;XML Document...</p>
         </div>
         <div class="right">
@@ -489,7 +482,7 @@ Tutorial 06 - Working With XML and DTDs
         <p>You should have the hang of this by now!</p>
         <p>Make an order for yourself, eat-in or takeout.</p>
         <p>Construct the most awesome burger you can think of, with at
-        least one cheese, three toppings, and two sauces.</p>
+            least one cheese, three toppings, and two sauces.</p>
         <p>One of your burgers should ask for peanut butter on it as well.</p>
         <p>Feel free to have two burgers in your order!</p>
             

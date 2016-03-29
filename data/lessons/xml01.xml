@@ -10,7 +10,7 @@ Lesson 07 - XML Basics
             <p>
                 <strong>X M L</strong> stands for eXtensible Markup Language</p>
             <p>Used for storing object or data structure state.</p>
-            <p>Remember COMP1536!</p>
+            <p>Remember ACIT1620!</p>
         </div>
         <div class="right">
             <p>Visualizing XML: elements (dots) may have children (below), 

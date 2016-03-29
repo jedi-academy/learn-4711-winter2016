@@ -2,7 +2,7 @@
 <!--
 Lesson 09- Processing XML 
 -->
-<lesson status="1.1">
+<lesson status="1.2">
     <!-- Activity metadata ... override anything from the course or organizer -->
 
     <slide title="XML ..." layout="normal" >
@@ -42,7 +42,7 @@ Lesson 09- Processing XML
 
     <!-- Normal slides -->
 
-    <slide title="DOCUMENT OBJECT MODEL" layout="normal" tag="tag1">
+    <slide title="1. DOCUMENT OBJECT MODEL" layout="normal" tag="tag1">
         <div class="left">
             <ul>
                 <li>The <a href="http://www.w3.org/DOM/" target="_blank">
@@ -136,7 +136,7 @@ Lesson 09- Processing XML
         </div>    
     </slide>
 
-    <slide title="DOM API" layout="normal" tag="tag2">
+    <slide title="2. DOM API" layout="normal" tag="tag2">
         <div class="left">
             <p>The DOM API provides a number of standard encapsulations
                 for a DOM tree, shown right.</p>
@@ -258,7 +258,7 @@ Lesson 09- Processing XML
         </ul>
     </slide>
 
-    <slide title="SUPPORT FOR XML" layout="normal" tag="tag3">
+    <slide title="3. SUPPORT FOR XML" layout="normal" tag="tag3">
         <div class="left">
             <ul>
                 <li>XML is supported in almost all programming languages.</li>
@@ -288,6 +288,8 @@ Lesson 09- Processing XML
         <div class="right">
             <img class="scale" width="450" height="485" src="/data/lessons/pix/9-10-Java_Duke_learning.png"/>
         </div>    
+        <img src="/data/lessons/pix/sample-only.png" height="112"
+                 style="position:fixed;top:0px;right:0px;z-index:999"/>
     </slide>
 
     <slide title="XML in PHP" layout="normal">
@@ -325,7 +327,7 @@ Lesson 09- Processing XML
         </div>    
     </slide>
 
-    <slide title="USING PHP-DOM" layout="normal" tag="tag4">
+    <slide title="4. USING PHP-DOM" layout="normal" tag="tag4">
         <div class="left">
             <ul>
                 <li>There are a number of classes in the PHP-DOM library,
@@ -431,7 +433,7 @@ Lesson 09- Processing XML
         </div>    
     </slide>
 
-    <slide title="USING SIMPLEXML" layout="normal" tag="tag5">
+    <slide title="5. USING SIMPLEXML" layout="normal" tag="tag5">
         <ul>
             <li>SimpleXML provides a data binding for XML elements in
                 the DOM tree built by libxml. A SimpleXMLElement object
@@ -440,9 +442,15 @@ Lesson 09- Processing XML
             <li>Depending on the context, SimpleXMLElements can be
                 treated as objects or arrays, and as iterable and indexable. 
             </li>
+            <li>This is different from conventional programming languages and
+                deserves repeating: a SimpleXMLElement can be simultaneously an
+                object and an array!
+            </li>
             <li>SimpleXML includes two classes, SimpleXMLElement and
                 SimpleIterator, and three functions. That's it!</li>
         </ul>
+        <p>SimpleXML is documented in the 
+            <a href="http://ca.php.net/manual/en/book.simplexml.php" target="_blank">PHP manual</a>.</p>
     </slide>
 
     <slide title="SimpleXML Objects" layout="normal">
@@ -700,7 +708,7 @@ Lesson 09- Processing XML
 
     
 
-    <slide title="XML MODELS" layout="normal" tag="tag4">
+    <slide title="6. XML MODELS" layout="normal" tag="tag4">
         <p>It is possible to build an Xml_model like My_model or My_model2.</p>
         <ul>
             <li>IFF your XML structure has consistent immediate children off 

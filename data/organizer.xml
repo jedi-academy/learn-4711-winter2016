@@ -65,43 +65,42 @@ Course organizer for Comp4711
         <lesson type="lesson" name="xml01" pdf="4711-xml01-xml-basics.pdf">XML Basics (Refresher)</lesson>
         <lesson type="lesson" name="xml02" pdf="4711-xml02-constraining-xml.pdf">Constraining XML</lesson>
         <github type="github" name="xml" link="https://github.com/jedi-academy/example-xml">XML Examples</github>
+        <lab type="lab" name="lab07"  pdf="4711-lab07-xml-basics.pdf">XML Basics</lab>
+        <tutorial type="tutorial" name="xml-xml01" pdf="4711-xml-xml01-xml-basics.pdf" >XML - Basics &amp; Constraints (optional)</tutorial>
         <!--
-        <tutorial type="tutorial" name="xml-xml01" >XML - Basics &amp; Constraints</tutorial>
-        <lab type="lab" name="lab07" >XML Basics</lab>
-        <assignment type="assignment" name="assignment2" pdfx="assignment2-functional-webapp.pdf">Functional Webapp</assignment>
-        -->
-    </week>
-    <week num="9">
-        <topic>XML Constraints &amp; Processing</topic>
-        <lesson type="lesson" name="xml03">XML Processing (Draft)</lesson>
-<!--        <tutorial type="tutorial" name="xml-xml02" >XML Processing (Draft)</tutorial>
-        <assignment type="assignment" name="assignment3" duedate="2015.12.06 23:59" pdf="assignment3-completed-webapp.pdf">Completed Webapp, introduced</assignment>
-        <tutorial type="tutorial" name="xml-xml03" >Creating XML</tutorial>
-        <lab type="lab" name="lab07" duedate="2015.03.29 17:30">XML Processing</lab>
         -->
     </week>
     <week num="10">
-        <topic>XML-RPC</topic>
-        <!--              <lesson type="lesson" name="advanced01">XML-RPC</lesson>
-            <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
-            <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
-            <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
-        -->
+        <topic>XML Processing</topic>
+        <lesson type="lesson" name="xml03" pdf="4711-xml03-xml-processing.pdf">XML Processing</lesson>
+        <github type="github" name="xml" link="https://github.com/jedi-academy/example-xml">XML Examples - updated!</github>
+        <github type="github" name="simplexml" link="https://github.com/jedi-academy/example-simplexml">Barker Bob grills with SimpleXML</github>
+        <lab type="lab" name="lab08"  pdf="4711-lab08-simplexml.pdf">XML Processing</lab>
+        <tutorial type="tutorial" name="xml-xml02"  pdf="4711-xml-xml02-simplexml.pdf">XML Processing</tutorial>
+        <!--        <tutorial type="tutorial" name="xml-xml03" >Creating XML (Draft)</tutorial>
+        <assignment type="assignment" name="assignment2" pdfx="4711-assignment2-functional-webapp.pdf">Functional Webapp</assignment>-->
     </week>
     <week num="11">
-        <topic>REST &amp; JSON</topic>
-        <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
-            <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
-            <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
-            <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
+        <topic>Authentication</topic>
+        <lesson type="lesson" name="advanced01" pdf="4711-ci-advanced01.pdf">Authentication</lesson>
+        <lab type="lab" name="lab09"  pdf="4711-lab09-authentication.pdf">Authentication</lab>
+        <tutorial type="tutorial" name="tut-adv01"  pdf="4711-tut-adv01.pdf">Authentication</tutorial>
+        <!--     <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
         -->
     </week>
     <week num="12">
-        <topic>Authentication</topic>
-        <!--        <lesson type="lesson" name="advanced02">REST &amp; JSON</lesson>
-            <tutorial type="tutorial" name="tutorial08" >Authentication</tutorial>
-            <lab type="lab" name="lab08" duedate="2015.04.10 17:30">Authentication</lab>
-            <assignment type="assignment" name="assignment3" duedate="">Completed Webapp</assignment> 
+        <topic>XML-RPC</topic>
+        <lesson type="lesson" name="advanced02" pdf="4711-ci-advanced02.pdf">XML-RPC</lesson>
+        <github type="github" name="xml" link="https://github.com/jedi-academy/example-xmlrpc">XML-RPC Examples</github>
+        <!--       <tutorial type="tutorial" name="tut-adv02"  pdf="4711-tut-adv02-xmlrpc.pdf">XML-RPC Tutorial</tutorial>
+              <lab type="lab" name="lab10" pdf="4711-lab10-xmlrpc.pdf" >Working with XML-RPC</lab>
+        <assignment type="assignment" name="assignment2" pdfx="4711-assignment2-functional-webapp.pdf">Functional Webapp</assignment>-->
+    </week>
+    <week num="13">
+        <topic>REST &amp; JSON</topic>
+         <!--        <lesson type="lesson" name="advanced03">REST &amp; JSON</lesson>
+        <tutorial type="tutorial" name="tut-adv03"  pdf="4711-tut-adv03-rest.pdf">REST</tutorial>
+            <lab type="lab" name="lab11" pdf="4711-lab11-rest.pdf" >Working with REST</lab>
         -->
     </week>
     <week num="14">
