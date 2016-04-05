@@ -98,8 +98,9 @@ Course organizer for Comp4711
     </week>
     <week num="13">
         <topic>REST &amp; JSON</topic>
-         <!--        <lesson type="lesson" name="advanced03">REST &amp; JSON</lesson>
-        <tutorial type="tutorial" name="tut-adv03"  pdf="4711-tut-adv03-rest.pdf">REST</tutorial>
+                 <lesson type="lesson" name="advanced03" pdf="4711-ci-advanced03.pdf">REST</lesson>
+                 <lesson type="lesson" name="advanced04" pdf="4711-ci-advanced04.pdf">JSON</lesson>
+       <!-- <tutorial type="tutorial" name="tut-adv03"  pdf="4711-tut-adv03-rest.pdf">REST</tutorial>
             <lab type="lab" name="lab11" pdf="4711-lab11-rest.pdf" >Working with REST</lab>
         -->
     </week>
